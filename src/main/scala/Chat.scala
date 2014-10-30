@@ -6,15 +6,32 @@ import akka.actor._
 
 import scala.collection.mutable._
 
+sealed trait Messenger
+case class Message(to: String,sub: String) extends Messenger
+case class ChatLog(to: String) extends Messenger
+
 class UserActor extends Actor {
- // val remote = context.actorFor("akka://HelloRemoteSystem@127.0.0.1:2552/user/UserActor")
+ var lis = new ListBuffer[String]()
+ 
+
+// val remote = context.actorFor("akka://HelloRemoteSystem@127.0.0.1:2552/user/UserActor")
   
   def receive = {
-  case msg : String => 
- //   remote ! "hello from useractor"
+  case msg : String =>  {
+  // remote ! "hello from useractor"
+   lis+=msg
     println ("received "+ msg)
-
 }
+  case Message(to, sub) => {
+  println("posted to " + to + " : " + sub)
+  lis+= to + ":"+ sub
+}
+  case ChatLog(to) => lis.filter(_.startsWith(to)).foreach(println)
+  case _ => print("unknown message")
+}
+
+
+
 }
 
 class UserAct extends Actor {
@@ -27,13 +44,14 @@ case msg: String =>
 }
 
 
-
+/*****
 
 
 sealed trait Messenger
+case class Message(from: String,to: String,sub: String) extends Messenger
 case class Create(name: String) extends Messenger
 case class Remove(name: String) extends Messenger
-case class Message(from: String,to: String,sub: String) extends Messenger
+
 
 
 
@@ -102,3 +120,6 @@ send ! Message("asdf","ghik","how are you")
 ***/
 }
 }
+
+
+**/

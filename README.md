@@ -1,2 +1,2 @@
 # ChatApp
-Chat application in akka
+Chat application using akka 

@@ -1,3 +1,24 @@
+#### [idea] Show initial message centered.
+1. When plugin opened initially help message in all pane should be at center.
+
+####[idea] Introduced async fetching of results from elastic search server.
+##### fixes <a href='https://github.com/Imaginea/BetterDocs/issues/131'> #131 </a>
+##### fixes <a href='https://github.com/Imaginea/BetterDocs/issues/127'> #127 </a>
+1. While fetching results IDE should not hang.
+
+#### [ideaplugin] show help info should autmatically bring the focus to main pane.
+##### Display the content centered.
+1. When help message is displayed all pane should get focus and help content should be in 			center.
+
+#### [ideaplugin] #141 Plugin throwing AIOBE has been fixed.
+##### fixes <a href='https://github.com/Imaginea/BetterDocs/issues/141'> #141 </a>
+1. Add this line 'import ' in your code and hit refresh buttion.
+2. NullPointerException will not be thrown.
+
+#### [ideaplugin] fixed the white background if highlighted code in new tab in main editor  is selected
+##### fixes <a href='https://github.com/Imaginea/BetterDocs/issues/117'> #117 </a>
+1. When results in all pane/featured pane opened as new tab in IDE, selecting highlighted code 
+		should be visible.
 
 #### [ideaplugin] added git icon to tree nodes and goto github right click menu item
 ##### fixes <a href='https://github.com/Imaginea/BetterDocs/issues/129'> #129 </a>

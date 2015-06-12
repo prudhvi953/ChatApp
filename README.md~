@@ -70,7 +70,7 @@
 #### [ideaplugin] Taking number of tiny editors in featured pane through settings panel.
 ##### fixes <a href='https://github.com/Imaginea/BetterDocs/issues/174'> #174 </a>
 1. Click on settings in toolbar. This should open Settings panel.
-<img src='https://raw.githubusercontent.com/prudhvije/ChatApp/chat/test/images/174.png'/>
+<img src='https://raw.githubusercontent.com/prudhvije/ChatApp/chat/test/images/174.png'/> 
 2. Change Featured Count to 10 and click on 'Apply' button followed by 'Ok' button
 3. Hit refresh button.
 4. In Featured Pane atmost 10 tiny editors should get populated.
@@ -78,17 +78,17 @@
 #### [ideaplugin] Tabbed UI alterations.
 ##### fixes <a href='https://github.com/Imaginea/BetterDocs/issues/150'> #150 </a>
 1. Open the Betterdocs plugin, it should have two panes named Featured and all from left to right.
-<img src='https://raw.githubusercontent.com/prudhvije/ChatApp/chat/test/images/150.png'/>
+<img src='https://raw.githubusercontent.com/prudhvije/ChatApp/chat/test/images/150.png'/> 
 2. Hit refresh button to check search results in both panes.
 
 #### [ideaplugin] Plugin throwing exception if HTTP response code from elastic search is not 200.
 ##### fixes <a href='https://github.com/Imaginea/BetterDocs/issues/139'> #139 </a>
 1. Open Settings Panel, change 'Elastic Search URL' to labs.imaginea.com.
-<img src='https://raw.githubusercontent.com/prudhvije/ChatApp/chat/test/images/139.png'/>
+<img src='https://raw.githubusercontent.com/prudhvije/ChatApp/chat/test/images/139.png'/> 
 2. Apply and click 'Ok'.
 3. Hit refresh button.
 4. All Pane Should have message "Connection Error: 404 Not Found".
-<img src='https://raw.githubusercontent.com/prudhvije/ChatApp/chat/test/images/connection_error.png'/>
+<img src='https://raw.githubusercontent.com/prudhvije/ChatApp/chat/test/images/connection_error.png'/> 
 5. No Exception after closing the plugin in idea.log/console.
 
 #### [ideaplugin] Rename "Repo Stars" in Code Pane to "Score:" and make "Repo Name" clickable.
